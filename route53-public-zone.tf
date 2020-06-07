@@ -1,6 +1,6 @@
 resource "aws_route53_zone" "r53-public" {
   name          = var.public_domain_name
-  comment       = "${var.public_domain_name} E-commerce shop"
+  comment       = "VPC Public DNS for ${var.public_domain_name}"
   force_destroy = true
 
   tags = {
