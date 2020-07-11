@@ -1,15 +1,7 @@
-variable "region" {
-  default = ""
-}
+variable "region" {}
 
-variable "public_domain_name" {
-  default = ""
-}
+variable "public_domain_name" {}
 
-variable "private_domain_name" {
-  default = ""
-}
+variable "private_domain_name" {}
 
-variable "vpc-tagname" {
-  default = ""
-}
+variable "vpc-tagname" {}
