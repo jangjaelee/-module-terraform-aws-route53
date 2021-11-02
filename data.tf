@@ -1,6 +1,6 @@
-data "aws_vpc" "vpc-id" {
+data "aws_vpc" "this" {
   filter {
-    name = "tag:Name"
-    values = [var.vpc-tagname]
+    name   = "tag:Name"
+    values = ["${var.vpc_name}-vpc"]
   }
 }
